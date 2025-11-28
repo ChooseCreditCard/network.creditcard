@@ -2,39 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>The Choose.Creditcard Network — About & Sitemap</title>
-  <meta name="description"
-        content="About the Choose.Creditcard network, sitemap and contact. Umbrella brand with focused spokes for travel, cashback and technology — built for trust, transparency and clear navigation.">
+  <title>Network.Creditcard – How Card Networks Operate</title>
+  <meta name="description" content="Understand how global card networks work: routing, authorization, settlement, rules and interoperability. Neutral and educational overview of card network infrastructure." />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://network.creditcard/" />
 
-  <!-- SEO -->
-  <meta name="robots" content="index,follow" />
-  <meta name="keywords"
-        content="choose.creditcard network, sitemap, about, contact, credit card guides, transparency, E-E-A-T">
-
   <!-- Open Graph -->
-  <meta property="og:title" content="The Choose.Creditcard Network — About & Sitemap">
-  <meta property="og:description"
-        content="Umbrella brand with focused spokes for travel, cashback and technology. Network-level sitemap, principles and contact.">
+  <meta property="og:title" content="Network.Creditcard – Card Network Infrastructure Explained" />
+  <meta property="og:description" content="Learn how Visa, Mastercard and other networks route transactions, verify identity, set rules and manage settlement." />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="https://network.creditcard/" />
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://network.creditcard/preview.png">
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=network.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Choose.Creditcard Network — About & Sitemap">
-  <meta name="twitter:description" content="Trust, structure and navigation for the entire Choose.Creditcard collection.">
-  <meta name="twitter:image" content="https://network.creditcard/preview.png">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Network.Creditcard – Card Network Infrastructure Explained" />
+  <meta name="twitter:description" content="Neutral documentation-style explanation of card network rules, routing, interoperability and settlement." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=network.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
-  <!-- Shared base CSS for the collection -->
-  <link rel="stylesheet" href="/styles.css" />
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Analytics (GA4) -->
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -42,157 +30,198 @@
     gtag('js', new Date());
     gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="bg-slate-950 text-slate-100">
-
-  <!-- Header -->
-  <header class="border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="h-8 w-8 rounded-full bg-sky-500/80 flex items-center justify-center text-xs font-bold">
-          CC
-        </div>
-        <div class="flex flex-col leading-tight">
-          <span class="font-semibold tracking-tight">Network.Creditcard</span>
-          <span class="text-[11px] text-slate-400">Network hub · The CreditCard Collection</span>
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">Network.Creditcard</div>
+          <div class="brand-subtitle">Card Network Infrastructure Explained</div>
         </div>
       </div>
-
-      <nav class="hidden md:flex gap-6 text-sm text-slate-300">
-        <a href="#about" class="hover:text-white">About</a>
-        <a href="#sites" class="hover:text-white">Sites</a>
-        <a href="#sitemap" class="hover:text-white">Sitemap</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
-        <a href="https://choose.creditcard/" class="hover:text-white">Choose</a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
       </nav>
-
-      <a href="mailto:support@ronarn.com"
-         class="text-xs md:text-sm bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold rounded-lg px-3 py-1.5 transition">
-        Contact
-      </a>
     </div>
   </header>
 
-  <!-- Hero / About -->
-  <section class="max-w-6xl mx-auto px-4 pt-10 pb-12" id="about">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="text-xs uppercase tracking-[0.3em] text-sky-300 mb-4">
-          About the network
+  <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      Network.Creditcard
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How Global Card Networks Actually Work</h1>
+        <p class="hero-lead">
+          Every card transaction — whether online or tap-to-pay — relies on network rules, routing and real-time authorization. This page breaks down how Visa, Mastercard and similar networks operate behind the scenes.
         </p>
+        <a class="cta" href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore independent card comparisons
+        </a>
+      </div>
+    </section>
 
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
-          The Choose.Creditcard<br class="hidden md:block" />
-          <span class="text-sky-300">Network.</span>
-        </h1>
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <h2>What Is a Card Network?</h2>
+      <p>A card network is the system that connects merchants, acquirers, issuers and cardholders. It sets the technical standards, the security rules and the transaction flow used for authorizing and settling payments.</p>
+      <p>Networks like Visa and Mastercard do not issue cards. Instead, they define the infrastructure that makes cards interoperable across millions of terminals and banks worldwide.</p>
+    </section>
 
-        <p class="text-slate-300 leading-relaxed mb-6">
-          One umbrella brand with focused spokes for travel, cashback and technology.
-          Clear navigation, transparent methodology and author pages designed to support
-          E-E-A-T and user trust.
-        </p>
+    <!-- Mechanics -->
+    <section id="mechanics" class="section">
+      <h2>How Transactions Flow Through a Network</h2>
+      <p>When you make a purchase, the merchant’s terminal forwards the request to an acquirer, which passes it through the network to your issuer. The issuer evaluates identity, limits and risk, and returns an approval or decline within milliseconds.</p>
+      <p>The network also handles additional checks, such as token verification, country rules, fraud markers and risk-based authentication signals.</p>
 
-        <div class="flex flex-wrap gap-3">
-          <a href="https://choose.creditcard/"
-             class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold rounded-lg px-4 py-2 text-sm transition">
-            Go to hub
-          </a>
-          <a href="#sitemap"
-             class="text-sm text-slate-200 hover:text-white underline underline-offset-4">
-            Open sitemap
-          </a>
-        </div>
+      <ul class="list">
+        <li>Terminal → Acquirer → Network → Issuer → Network → Terminal</li>
+        <li>Cryptographic validation ensures data integrity</li>
+        <li>Tokenization replaces real card numbers on modern devices</li>
+        <li>Risk engines flag anomalies based on velocity, geography and spend pattern</li>
+      </ul>
+
+      <p>After authorization, settlement happens later through batch processes between banks and the network.</p>
+    </section>
+
+    <!-- Comparison table -->
+    <section id="compare" class="section">
+      <h2>Key Differences Between Card Networks</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Acceptance</td>
+              <td>Coverage in regions you spend time in</td>
+              <td>Determines real-world usability, especially abroad.</td>
+            </tr>
+            <tr>
+              <td>Tokenization Support</td>
+              <td>Apple/Google wallet compatibility, device tokens</td>
+              <td>Affects mobile payments and security layers.</td>
+            </tr>
+            <tr>
+              <td>Rules &amp; Protections</td>
+              <td>Chargeback rules, escrow windows, dispute rights</td>
+              <td>Influences how issues are resolved between merchants and issuers.</td>
+            </tr>
+            <tr>
+              <td>FX Handling</td>
+              <td>Network conversion rate, DCC policies</td>
+              <td>Affects foreign purchases even if your issuer has no FX fee.</td>
+            </tr>
+            <tr>
+              <td>Security Standards</td>
+              <td>3DS, SCA, risk-based authentication</td>
+              <td>Determines when extra verification is required.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="bg-slate-900/30 border border-slate-800 rounded-2xl p-6 md:p-8">
-        <p class="text-slate-300 text-sm mb-3">Principles</p>
-        <ul class="list-disc list-inside text-sm text-slate-300 space-y-1">
-          <li>Clear sourcing &amp; last-updated dates</li>
-          <li>Separation of editorial and affiliate placements</li>
-          <li>Schema.org for lists, products &amp; reviews</li>
-          <li>Consistent network-wide navigation &amp; branding</li>
-        </ul>
+      <p class="small">
+        For product comparisons, visit
+        <a href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Infrastructure Microsites</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://tech.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_tech">
+          <h3>Tech.Creditcard</h3>
+          <p>How card technology, NFC, and wallets operate.</p>
+        </a>
+        <a class="cluster-card" href="https://access.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_access">
+          <h3>Access.Creditcard</h3>
+          <p>Identity, permissions and authorization layers.</p>
+        </a>
+        <a class="cluster-card" href="https://limits.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_limits">
+          <h3>Limits.Creditcard</h3>
+          <p>How issuers set and manage spending limits.</p>
+        </a>
+        <a class="cluster-card" href="https://verify.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_verify">
+          <h3>Verify.Creditcard</h3>
+          <p>Risk checks, authentication and verification flows.</p>
+        </a>
+        <a class="cluster-card" href="https://applications.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_applications">
+          <h3>Applications.Creditcard</h3>
+          <p>The application → approval → activation pipeline.</p>
+        </a>
+        <a class="cluster-card" href="https://comparecard.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_comparecard">
+          <h3>CompareCard.Creditcard</h3>
+          <p>Neutral documentation-style card comparison structure.</p>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sites overview -->
-  <section class="max-w-6xl mx-auto px-4 pb-12" id="sites">
-    <h2 class="text-xl font-semibold mb-4">Sites in the network</h2>
+    <!-- Collection -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        Network.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused minisites operated by ronarn AS.
+      </p>
+      <p class="small">
+        We do not issue cards. We summarize documentation, highlight system behaviour and link to independent comparison hubs.
+      </p>
+      <p class="small">
+        This site is informational only and does not provide financial, investment or legal advice.
+      </p>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4"
-         href="https://choose.creditcard/">
-        <h3 class="font-semibold">Choose</h3>
-        <p class="text-xs text-slate-400 mt-2">Hub, comparison &amp; guides.</p>
+      <!-- Comparison hub snippet -->
+      <p class="text-xs text-slate-500 mt-6">
+        This page connects to the
+        <a href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=hub_network"
+           class="font-medium hover:text-slate-900">
+          main comparison hub
+        </a>
+        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>,
+        covering neutral card explanations and product documentation.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to Explore More Infrastructure?</h2>
+      <p class="small">
+        Use Network.Creditcard to understand how networks operate — then explore the main hub for structured comparisons.
+      </p>
+      <a class="cta" href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to Choose.Creditcard
       </a>
+    </section>
+  </main>
 
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4"
-         href="https://travels.creditcard/">
-        <h3 class="font-semibold">Travels</h3>
-        <p class="text-xs text-slate-400 mt-2">No FX · lounges · insurance.</p>
-      </a>
-
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4"
-         href="https://cashbacks.creditcard/">
-        <h3 class="font-semibold">Cashbacks</h3>
-        <p class="text-xs text-slate-400 mt-2">Rewards, categories &amp; caps.</p>
-      </a>
-
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4"
-         href="https://tech.creditcard/">
-        <h3 class="font-semibold">Tech</h3>
-        <p class="text-xs text-slate-400 mt-2">NFC · virtual · AI · crypto.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- Sitemap -->
-  <section class="max-w-6xl mx-auto px-4 pb-16" id="sitemap">
-    <h2 class="text-xl font-semibold mb-4">Sitemap (MVP)</h2>
-
-    <div class="grid md:grid-cols-2 gap-4 text-sm">
-      <div class="bg-slate-900/30 border border-slate-800 rounded-xl p-4">
-        <h3 class="font-semibold mb-2">Choose</h3>
-        <ul class="space-y-1 text-slate-300">
-          <li><a class="underline underline-offset-4" href="https://choose.creditcard/#compare">/compare</a></li>
-          <li><a class="underline underline-offset-4" href="https://choose.creditcard/guides/apr">/guides/apr</a></li>
-          <li><a class="underline underline-offset-4" href="https://choose.creditcard/guides/foreign-fees">/guides/foreign-fees</a></li>
-          <li><a class="underline underline-offset-4" href="https://choose.creditcard/guides/lounges">/guides/lounges</a></li>
-          <li><a class="underline underline-offset-4" href="https://choose.creditcard/guides/security">/guides/security</a></li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-900/30 border border-slate-800 rounded-xl p-4">
-        <h3 class="font-semibold mb-2">Travels &amp; Tech</h3>
-        <ul class="space-y-1 text-slate-300">
-          <li><a class="underline underline-offset-4" href="https://travels.creditcard/no-foreign-fees">travels: /no-foreign-fees</a></li>
-          <li><a class="underline underline-offset-4" href="https://travels.creditcard/lounge">travels: /lounge</a></li>
-          <li><a class="underline underline-offset-4" href="https://travels.creditcard/insurance">travels: /insurance</a></li>
-          <li><a class="underline underline-offset-4" href="https://tech.creditcard/tap">tech: /tap</a></li>
-          <li><a class="underline underline-offset-4" href="https://tech.creditcard/virtual">tech: /virtual</a></li>
-          <li><a class="underline underline-offset-4" href="https://tech.creditcard/wearables">tech: /wearables</a></li>
-          <li><a class="underline underline-offset-4" href="https://tech.creditcard/ai-fraud">tech: /ai-fraud</a></li>
-          <li><a class="underline underline-offset-4" href="https://tech.creditcard/crypto">tech: /crypto</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="max-w-6xl mx-auto px-4 pb-10" id="contact">
-    <h2 class="text-xl font-semibold mb-4">Contact</h2>
-    <p class="text-sm text-slate-300">
-      Acquisitions &amp; partnerships:
-      <a class="underline underline-offset-4" href="mailto:support@ronarn.com">support@ronarn.com</a>
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
-  </section>
-
-  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    Part of <span class="text-slate-200">The CreditCard Collection</span> · built by
-    <span class="text-slate-200">ronarn</span> · Contact:
-    <a href="mailto:support@ronarn.com" class="underline underline-offset-4">support@ronarn.com</a>
   </footer>
-
 </body>
 </html>
