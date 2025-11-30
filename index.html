@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Network.Creditcard – How Card Networks Operate</title>
-  <meta name="description" content="Understand how global card networks work: routing, authorization, settlement, rules and interoperability. Neutral and educational overview of card network infrastructure." />
+  <title>Network.Creditcard – How Card Networks Connect Payments</title>
+  <meta name="description" content="What a card network is, how issuers, acquirers and merchants connect, and why networks matter for fees, protections and global acceptance. Neutral, educational overview." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://network.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Network.Creditcard – Card Network Infrastructure Explained" />
-  <meta property="og:description" content="Learn how Visa, Mastercard and other networks route transactions, verify identity, set rules and manage settlement." />
+  <meta property="og:title" content="Network.Creditcard – Card Networks Explained" />
+  <meta property="og:description" content="Independent explanation of how card networks connect banks, merchants and cardholders, and how that affects fees, routing and protections." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://network.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=network.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Network.Creditcard – Card Network Infrastructure Explained" />
-  <meta name="twitter:description" content="Neutral documentation-style explanation of card network rules, routing, interoperability and settlement." />
+  <meta name="twitter:title" content="Network.Creditcard – Card Networks Explained" />
+  <meta name="twitter:description" content="Learn how card networks sit between your bank and the merchant, and what that means for fees, acceptance and protections." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=network.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -44,13 +44,13 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">Network.Creditcard</div>
-          <div class="brand-subtitle">Card Network Infrastructure Explained</div>
+          <div class="brand-subtitle">How Card Networks Connect Payments</div>
         </div>
       </div>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#overview">Overview</a>
-        <a href="#mechanics">How It Works</a>
-        <a href="#compare">Compare</a>
+        <a href="#flow">How Payments Flow</a>
+        <a href="#roles">Who Does What</a>
       </nav>
     </div>
   </header>
@@ -66,12 +66,12 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1>How Global Card Networks Actually Work</h1>
+        <h1>What a Card Network Actually Does</h1>
         <p class="hero-lead">
-          Every card transaction — whether online or tap-to-pay — relies on network rules, routing and real-time authorization. This page breaks down how Visa, Mastercard and similar networks operate behind the scenes.
+          Behind every tap, chip or online checkout, a card network connects your bank and the merchant. This page explains how that network is structured, who gets paid, and why it matters for fees, protections and where your card is accepted.
         </p>
         <a class="cta" href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Explore independent card comparisons
+          Compare cards at the main hub
         </a>
       </div>
     </section>
@@ -79,137 +79,131 @@
     <!-- Overview -->
     <section id="overview" class="section">
       <h2>What Is a Card Network?</h2>
-      <p>A card network is the system that connects merchants, acquirers, issuers and cardholders. It sets the technical standards, the security rules and the transaction flow used for authorizing and settling payments.</p>
-      <p>Networks like Visa and Mastercard do not issue cards. Instead, they define the infrastructure that makes cards interoperable across millions of terminals and banks worldwide.</p>
+      <p>A <strong>card network</strong> is the infrastructure that carries payment messages between the bank that issued your card and the financial institution that serves the merchant. It defines technical standards, routing rules and many of the protections that apply when something goes wrong.</p>
+      <p>When people talk about “which network” a card runs on, they usually mean which brand and ruleset sits in the middle of the transaction — not which bank issued the plastic or digital card you hold.</p>
     </section>
 
-    <!-- Mechanics -->
-    <section id="mechanics" class="section">
-      <h2>How Transactions Flow Through a Network</h2>
-      <p>When you make a purchase, the merchant’s terminal forwards the request to an acquirer, which passes it through the network to your issuer. The issuer evaluates identity, limits and risk, and returns an approval or decline within milliseconds.</p>
-      <p>The network also handles additional checks, such as token verification, country rules, fraud markers and risk-based authentication signals.</p>
-
-      <ul class="list">
-        <li>Terminal → Acquirer → Network → Issuer → Network → Terminal</li>
-        <li>Cryptographic validation ensures data integrity</li>
-        <li>Tokenization replaces real card numbers on modern devices</li>
-        <li>Risk engines flag anomalies based on velocity, geography and spend pattern</li>
+    <!-- Payment flow -->
+    <section id="flow" class="section">
+      <h2>How a Card Payment Flows Through the Network</h2>
+      <p>Even a simple tap at a terminal involves several steps:</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>1. Authorisation request:</strong> The merchant’s terminal sends a request through their bank or payment provider into the card network.</li>
+        <li><strong>2. Routing to issuer:</strong> The network identifies your issuing bank based on the card number and forwards the request.</li>
+        <li><strong>3. Approval or decline:</strong> The issuer checks balance, limits, fraud signals and either approves or declines.</li>
+        <li><strong>4. Response back to merchant:</strong> The decision is routed back through the network so the terminal can show “approved” or “declined”.</li>
+        <li><strong>5. Clearing &amp; settlement:</strong> Later, the transaction is “cleared” and funds move from issuer to acquirer, minus network and interchange fees.</li>
       </ul>
-
-      <p>After authorization, settlement happens later through batch processes between banks and the network.</p>
+      <p>The card network doesn’t usually lend you money directly. Instead, it enforces rules and connects participants so issuers, acquirers and merchants can interact at global scale.</p>
     </section>
 
-    <!-- Comparison table -->
-    <section id="compare" class="section">
-      <h2>Key Differences Between Card Networks</h2>
+    <!-- Roles table -->
+    <section id="roles" class="section">
+      <h2>Who’s Involved in a Networked Card Payment?</h2>
+      <p>Several different actors sit behind a single card swipe or tap:</p>
       <div class="table-wrap">
         <table class="table">
           <thead>
             <tr>
-              <th>Aspect</th>
-              <th>What to Look For</th>
-              <th>Why It Matters</th>
+              <th>Role</th>
+              <th>What They Are</th>
+              <th>What They Do</th>
+              <th>Why It Matters for You</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Acceptance</td>
-              <td>Coverage in regions you spend time in</td>
-              <td>Determines real-world usability, especially abroad.</td>
+              <td>Cardholder</td>
+              <td>You, the person using the card.</td>
+              <td>Initiates the transaction by tapping, inserting or entering card details.</td>
+              <td>Your behaviour (spend, repayment, disputes) shapes risk and available products.</td>
             </tr>
             <tr>
-              <td>Tokenization Support</td>
-              <td>Apple/Google wallet compatibility, device tokens</td>
-              <td>Affects mobile payments and security layers.</td>
+              <td>Merchant</td>
+              <td>The shop, airline, website or service provider.</td>
+              <td>Accepts card payments using a terminal, POS or online gateway.</td>
+              <td>Merchant category can affect rewards, fees and how transactions are coded.</td>
             </tr>
             <tr>
-              <td>Rules &amp; Protections</td>
-              <td>Chargeback rules, escrow windows, dispute rights</td>
-              <td>Influences how issues are resolved between merchants and issuers.</td>
+              <td>Acquirer</td>
+              <td>The merchant’s bank or payment provider.</td>
+              <td>Signs up merchants, provides terminals and connects to card networks.</td>
+              <td>Helps determine which cards are accepted and what the merchant pays in fees.</td>
             </tr>
             <tr>
-              <td>FX Handling</td>
-              <td>Network conversion rate, DCC policies</td>
-              <td>Affects foreign purchases even if your issuer has no FX fee.</td>
+              <td>Issuer</td>
+              <td>The bank or fintech that issued your card.</td>
+              <td>Extends credit (for credit cards), sets your limit and manages your account.</td>
+              <td>Controls interest rates, statement rules, rewards and fraud handling.</td>
             </tr>
             <tr>
-              <td>Security Standards</td>
-              <td>3DS, SCA, risk-based authentication</td>
-              <td>Determines when extra verification is required.</td>
+              <td>Card Network</td>
+              <td>The scheme that sits in the middle.</td>
+              <td>Routes authorisations, defines rules, sets some fee frameworks and protections.</td>
+              <td>Affects global acceptance, chargeback rights and sometimes dispute timelines.</td>
             </tr>
           </tbody>
         </table>
       </div>
-
       <p class="small">
-        For product comparisons, visit
-        <a href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          Choose.Creditcard
-        </a>.
+        The exact roles and contracts can vary, especially with modern payment aggregators and wallets — but the network remains the backbone that ties them together.
       </p>
     </section>
 
-    <!-- Cluster links -->
+    <!-- Cluster links to other minisites -->
     <section class="section">
-      <h2>Explore Related Infrastructure Microsites</h2>
+      <h2>Explore Related Infrastructure &amp; Network Topics</h2>
       <div class="cluster-grid">
-        <a class="cluster-card" href="https://tech.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_tech">
-          <h3>Tech.Creditcard</h3>
-          <p>How card technology, NFC, and wallets operate.</p>
+        <a class="cluster-card" href="https://hub.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_hub">
+          <h3>Hub.Creditcard</h3>
+          <p>How comparison hubs organise topics like travel, rewards and protections.</p>
         </a>
-        <a class="cluster-card" href="https://access.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_access">
-          <h3>Access.Creditcard</h3>
-          <p>Identity, permissions and authorization layers.</p>
+        <a class="cluster-card" href="https://directory.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_directory">
+          <h3>Directory.Creditcard</h3>
+          <p>Overview of minisites across The CreditCard Collection network.</p>
         </a>
-        <a class="cluster-card" href="https://limits.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_limits">
-          <h3>Limits.Creditcard</h3>
-          <p>How issuers set and manage spending limits.</p>
+        <a class="cluster-card" href="https://bin.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_bin">
+          <h3>Bin.Creditcard</h3>
+          <p>How card number ranges (BINs) identify networks and issuers.</p>
         </a>
-        <a class="cluster-card" href="https://verify.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_verify">
-          <h3>Verify.Creditcard</h3>
-          <p>Risk checks, authentication and verification flows.</p>
+        <a class="cluster-card" href="https://fx.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_fx">
+          <h3>Fx.Creditcard</h3>
+          <p>Foreign-exchange aspects of card payments across borders.</p>
         </a>
-        <a class="cluster-card" href="https://applications.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_applications">
-          <h3>Applications.Creditcard</h3>
-          <p>The application → approval → activation pipeline.</p>
-        </a>
-        <a class="cluster-card" href="https://comparecard.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_comparecard">
-          <h3>CompareCard.Creditcard</h3>
-          <p>Neutral documentation-style card comparison structure.</p>
+        <a class="cluster-card" href="https://technology.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=cluster_technology">
+          <h3>Technology hub on Choose.Creditcard</h3>
+          <p>Virtual cards, wallets and tap-to-pay built on top of card networks.</p>
         </a>
       </div>
     </section>
 
-    <!-- Collection -->
+    <!-- Collection / snippet -->
     <section class="section">
       <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        Network.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused minisites operated by ronarn AS.
+        Network.Creditcard belongs to <strong>The CreditCard Collection</strong> — a network of focused minisites by ronarn AS. Each site explains one piece of the card ecosystem. This one focuses on how networks connect issuers, acquirers, merchants and cardholders.
       </p>
       <p class="small">
-        We do not issue cards. We summarize documentation, highlight system behaviour and link to independent comparison hubs.
+        We do not operate a card network or issue cards. Content is based on typical industry structures and public documentation, and may differ from how any single provider works in detail.
       </p>
       <p class="small">
-        This site is informational only and does not provide financial, investment or legal advice.
+        Nothing on this page is personal financial advice. Always refer to your issuer’s and payment provider’s official terms for binding information.
       </p>
 
-      <!-- Comparison hub snippet -->
-      <p class="text-xs text-slate-500 mt-6">
-        This page connects to the
-        <a href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=hub_network"
-           class="font-medium hover:text-slate-900">
-          main comparison hub
+      <!-- ROOT HUB SNIPPET -->
+      <div class="hub-link">
+        <a href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-400 hover:text-slate-100">
+          Compare cards at Choose.Creditcard
         </a>
-        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>,
-        covering neutral card explanations and product documentation.
-      </p>
+      </div>
     </section>
 
     <!-- Bottom CTA -->
     <section class="section">
-      <h2>Ready to Explore More Infrastructure?</h2>
+      <h2>From Network Mechanics to Real Card Choices</h2>
       <p class="small">
-        Use Network.Creditcard to understand how networks operate — then explore the main hub for structured comparisons.
+        Use Network.Creditcard to understand the rails beneath your card — then visit the main comparison hub to see how different products line up on fees, protections, rewards and technology.
       </p>
       <a class="cta" href="https://choose.creditcard/?utm_source=network.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
         Go to Choose.Creditcard
